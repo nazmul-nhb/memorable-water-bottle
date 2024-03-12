@@ -1,0 +1,24 @@
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4px;
+}
+
+.cart-container img {
+    width: 64px;
+    border-radius: 8px;
+}
+
+.cart-container p {
+    font-size: 8px;
+}
+
+@media screen and (max-width:640px) {
+    .cart-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .cart-container p {
+        font-size: 6px;
+    }
+}
