@@ -1,0 +1,11 @@
+.bottle{
+    border: 1px solid teal;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+.bottle img{
+    width: 220px;
+    border-radius: 12px;
+}
