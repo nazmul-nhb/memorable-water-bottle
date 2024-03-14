@@ -9,7 +9,7 @@ const getStoredCart = () => {
 const addToLocal = id => {
     const cart = getStoredCart();
     cart.push(id);
-    const uniqueCart = cart.filter((id, idx, self) => self.indexOf(id) === idx);
+    const uniqueCart = cart.filter((id, index, cart) => cart.indexOf(id) === index);
     saveCartToLocal(uniqueCart);
 }
 

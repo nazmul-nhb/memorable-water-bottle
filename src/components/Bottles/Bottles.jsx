@@ -32,7 +32,7 @@ const Bottles = () => {
 
     const addToCart = bottle => {
         const newCart = [...cart, bottle];
-        const uniqueCart = newCart.filter((bottle, idx, self) => self.indexOf(bottle) === idx);
+        const uniqueCart = newCart.filter((bottle, index, newCart) => newCart.indexOf(bottle) === index);
         setCart(uniqueCart);
         addToLocal(bottle.id);
     }
